@@ -1,0 +1,16 @@
+1. analizar el fichero code.txt
+	cat code.txt
+
+2. buscar la encriptacion de base64
+
+-Conjunto de caracteres: Usa letras mayúsculas (A-Z), minúsculas (a-z), números (0-9) y los símbolos + y /.
+-Relleno (=): Al final de la cadena, puede haber uno o dos signos de igual (=) para asegurar que la longitud sea un múltiplo de 4, según la norma.
+-Longitud múltiplo de 4: La longitud total de la cadena codificada siempre será un múltiplo de 4. 
+
+"Y3JlYXRlZCBieSBKVCBzbWVldGg="
+
+3. decodificar con el comando base64
+	echo "Y3JlYXRlZCBieSBKVCBzbWVldGg=" | base64 -d
+
+4. salida de la flag
+	JT smeeth

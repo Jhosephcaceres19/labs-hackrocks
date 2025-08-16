@@ -1,0 +1,18 @@
+ 2           0 LOAD_CONST               1 ('')
+              3 STORE_FAST               1 (temp)   3           6 SETUP_LOOP              40 (to 49)
+              9 LOAD_FAST                0 (check)
+             12 GET_ITER            >>   13 FOR_ITER                32 (to 48)
+             16 STORE_FAST               2 (x)   4          19 LOAD_CONST               2 ('Y3JlYXRlZCBieSBKVCBzbWVldGg=')
+             22 STORE_FAST               3 (eeeee)   5          25 LOAD_FAST                1 (temp)
+             28 LOAD_GLOBAL              0 (chr)
+             31 LOAD_FAST                2 (x)
+             34 LOAD_CONST               3 (9)
+             37 BINARY_XOR          
+             38 CALL_FUNCTION            1
+             41 INPLACE_ADD         
+             42 STORE_FAST               1 (temp)
+             45 JUMP_ABSOLUTE           13>>   48 POP_BLOCK              6     >>   49 LOAD_FAST                1 (temp)
+             52 PRINT_ITEM          
+             53 PRINT_NEWLINE       
+             54 LOAD_CONST               0 (None)
+             57 RETURN_VALUE    
