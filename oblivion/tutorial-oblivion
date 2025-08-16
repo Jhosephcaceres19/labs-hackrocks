@@ -1,8 +1,13 @@
 #Pasos para resolver el reto de oblivion 
 1. hacer correr el fichero "malware" 
 	./malware
+
 2. ejecutar el comando de netstat para ver 
 	sudo netstat -tnp | grep ESTABLISHED
+
+2.1. ejecutar el script oblivion.py
+	python oblivion.py
+
 
 3. Info sobre netstat
 
