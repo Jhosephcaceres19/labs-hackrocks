@@ -1,0 +1,25 @@
+#Pasos para resolver el reto de oblivion 
+1. hacer correr el fichero "malware" 
+	./malware
+2. ejecutar el comando de netstat para ver 
+	sudo netstat -tnp | grep ESTABLISHED
+
+3. Info sobre netstat
+
+#netstat
+
+Herramienta que muestra las conexiones de red, tablas de enrutamiento y estadísticas de la red.
+
+Es como un "mapa" en tiempo real de lo que está pasando en la red de tu máquina.
+
+Opciones usadas:
+
+-t → Muestra solo conexiones TCP (ignora UDP).
+
+-n → Muestra direcciones numéricas en lugar de resolver nombres de dominio (ejemplo: 93.184.216.34 en vez de example.com). Esto es más rápido y más útil en análisis forense.
+
+-p → Muestra el PID (Process ID) y el nombre del programa que abrió la conexión (si tienes permisos).
+
+- | grep ESTABLISHED
+
+Filtra la salida de netstat y muestra solo las conexiones que están en estado ESTABLISHED, es decir, conexiones activas y funcionando (no en espera, ni cerradas).
